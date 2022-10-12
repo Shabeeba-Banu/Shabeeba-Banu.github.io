@@ -1,0 +1,375 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*................variables................*/
+:root{
+    /*.........main colors........*/
+    --bg-gray: rgba(140, 125, 125, 0.6);
+    --bg-blue: rgba(111, 141, 187, 0.6);
+    --bg-pink: rgba(185, 105, 121, 0.6);
+    --bg-white: rgb(255, 255, 255,0.5);
+
+    /*........font color..........*/
+    --main-h-color:rgb(8, 8, 106);
+    --sub-h-color:black;
+
+    /*.........font size...........*/
+    --icon-font: 30px;
+    --text-font: 18px;
+    --h1-size: 60px;
+    --p-size: 24px;
+
+    /*..........font......*/
+    --main-font-h:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --sub-font-h:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --small-font:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+/*...............Home page.........*/
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+   background-image:linear-gradient(to bottom right, var(--bg-gray), var(--bg-blue), var(--bg-pink));
+   min-height: 100vh;
+   
+}
+
+#Home{
+    display: block;
+}
+
+header{
+    background-color: white;
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0px;
+    
+}
+
+.link{
+    width: 30%;
+}
+
+.link li{
+    font-size: var(--icon-font);
+   
+}
+
+.link li a:hover{
+    color: var(--main-h-color);
+    
+}
+
+.link li a{
+    color: var(--sub-h-color);
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    font-family: var(--small-font);
+}
+
+
+.navbar{
+    text-align: right ;
+    width: 70%;
+    
+}
+
+.navbar li{
+    font-size: var(--text-font);
+}
+
+.navbar li a{
+    color: var(--sub-h-color);
+    font-weight: bold;
+}
+
+.navbar li:hover{
+   border: 1px solid rgb(172, 69, 86);
+   border-radius: 5px;
+   box-shadow: 1px 1px 1px 1px rgb(201, 118, 132,0.2);
+   
+}
+
+section{
+    background-color: var(--bg-white);
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+   
+}
+
+h1{
+    font-size: var(--h1-size);
+    font-family: var(--main-font-h);
+    color: var(--main-h-color);
+}
+
+p{
+    font-size: var(--p-size);
+    font-family: var(--small-font);
+   
+}
+
+button{
+    font-size: var(--text-font);
+    padding: 15px;
+    margin: 30px;
+    border-radius: 20px;
+    border: 1px solid rgb(0, 0, 255,0.1);
+    box-shadow: 1px 1px 3px 1px black;
+}
+
+button:hover{
+    background-color: var(--main-h-color);
+    color: white;
+}
+
+.main-title{
+    width: 50%;
+    text-align: center;
+    padding: 70px;
+}
+
+.photo{
+   
+    /*box-shadow: 3px 5px 12px 5px rgb(103, 100, 100);
+    width: 50%;
+   border-radius:99% 39% 94% 98% / 43% 100% 100% 46% ;*/
+   border-radius: 100% 100% 100% 100% / 97% 99% 100% 100% ;
+    padding: 40px;
+    margin: 30px;
+}
+
+.photo img{
+    width: 100%;
+   /* border-radius:99% 39% 94% 98% / 43% 100% 100% 46% ;*/
+    border-radius: 100% 100% 100% 100% / 97% 99% 100% 100% ;
+    
+    box-shadow: 3px 0px 4px  rgb(103, 101, 101);
+}
+
+
+
+
+/*.............Qualifications Page...............*/
+
+#Qualification{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    padding: 5px;
+    display: flex;
+}
+
+.left{
+    width: 25%;
+    display: flex;
+    
+}
+
+.left ul{
+   margin:auto;
+}
+
+.left li{
+    display: block;
+    padding: 20px;
+    margin: 20px;
+    font-family: var(--sub-font-h);
+    font-size: var(--p-size);
+    border-radius: 20px;
+    border: 1px solid rgb(162, 164, 168);
+    box-shadow: 1px 1px 3px 1px rgb(105, 107, 108);
+}
+
+.left ul li:hover{
+    background-color: var(--bg-white);
+    cursor:grab;
+}
+
+.pro{
+    display: block;
+}
+
+.C-link{
+    color: rgb(165, 45, 45);
+}
+
+.C-link:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.edu{
+    display: none;
+}
+
+.other{
+    text-align: center;
+    display: none;
+}
+
+.other a{
+    font-family: var(--sub-font-h);
+    font-size: var(--p-size);
+}
+
+.left li {
+    color: black;
+}
+
+.right{
+    width: 75%;
+    padding: 40px;
+}
+
+.right h3{
+    font-size: var(--p-size);
+    font-family: var(--small-font);
+    color: var(--main-h-color);
+}
+
+td{
+    padding: 20px;
+    font-family: var(--sub-font-h);
+    font-size: var(--text-font);
+}
+
+hr{
+    height: 5px;
+    background-color: rgb(40, 39, 39);
+}
+
+.logo{
+   width: 50%;
+   height: 50%;
+}
+
+/*...................Skill page..............*/
+
+#skill{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    padding: 5px;
+    display: flex;
+}
+
+.disc{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 1px 2px black;
+}
+
+.g{
+    background-color: rgb(4, 106, 4);
+}
+
+.y{
+    background-color: rgb(140, 99, 6);
+}
+
+.r{
+    background-color: rgb(181, 7, 7);
+}
+
+.bgnr{
+    background-color: rgb(181, 7, 7) ;
+}
+
+.dvlp{
+    background-color: rgb(140, 99, 6) ;
+}
+
+.prfnt{
+    background-color: rgb(4, 106, 4) ;
+}
+
+.advnc{
+    background-color:rgb(2, 2, 140) ;
+}
+
+.skill-table{
+    margin: auto;
+}
+
+.skl{
+    color: white;
+}
+.skill-table th{
+    padding: 5px;
+    font-family: var(--sub-font-h);
+    font-size: var(--sub-font-h);
+}
+
+/*....................Contact page............*/
+
+#contact{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 5px;
+    display: flex;
+}
+
+form{
+    margin: auto;
+}
+
+.data{
+    padding: 10px;
+}
+
+label{
+    font-size: var(--text-font);
+    font-family: var(--sub-font-h);
+}
+
+.input-fld{
+    padding:10px;
+    width: 100vh;
+    border: none;
+    background-color: var(--bg-white);
+    box-shadow: 0.5px 0.5px black;
+    border-radius: 5px;
+}
+
+.submit-btn{
+    padding: 12px;
+    font-size: var(--small-font);
+    font-family: var(--sub-font-h);
+    background-color:black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.submit-btn:hover{
+    background-color: var(--main-h-color);
+}
+
+.form-hdng{
+    font-size: var(--p-size);
+    font-family: var(--main-font-h);
+}
